@@ -18,8 +18,8 @@ class Motor:
 
     def executar_motor(self,):
         while not self.fila_de_execucao.empty():
-            dt = self.fila_de_execucao.get()
-            dt.executar()
+            processo = self.fila_de_execucao.get()
+            processo.executar()
 
     def executar_motor_os(self):
         lista = list()
